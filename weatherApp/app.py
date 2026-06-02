@@ -33,7 +33,11 @@ def create_app():
     @app.route("/example", methods=["GET"])
     def redirex():
         return render_template("base.html")
-
+    
+    @app.route("/viewtemp", methods=["GET"])
+    def viewtemp():
+        return render_template("base.html")
+    
     return app
 
 
