@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if error %}
+    <div class="error">Error: {{ error }}</div>
+    <p>Search again:</p>
+    <a href="/">Back</a>
+  {% else %}
+    <div class="weather-card">
+      <h2>{{ city }}</h2>
+      {% if icon_url %}
+        <img src="{{ icon_url }}" alt="weather icon" />
+      {% endif %}
+      <p class="temp">{{ temp }}°</p>
+      <p class="desc">{{ description }}</p>
+      <p class="humidity">Humedad en {{ city }}: {{ humidity }}%</p>
+      {% if cached %}
+        <small>(cached)</small>
+      {% endif %}
+    </div>
+    <p><a href="/">Search another city</a></p>
+  {% endif %}
+{% endblock %}

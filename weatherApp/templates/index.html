@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <form action="/weather" method="post" class="city-form">
+    <label for="city">Coloque el nombre de la ciudad</label>
+    <input id="city" name="city" placeholder="e.g. London" required />
+    <button type="submit">Get Weather</button>
+  </form>
+{% endblock %}

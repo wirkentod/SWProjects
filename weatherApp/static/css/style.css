@@ -1,0 +1,12 @@
+body { font-family: Arial, sans-serif; background:#f7fafc; color:#222; }
+.container { max-width:640px; margin:40px auto; padding:20px; background:white; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+header h1 { margin:0 0 12px 0; }
+.city-form { display:flex; gap:8px; align-items:center; }
+.city-form input { flex:1; padding:8px; font-size:1rem; }
+.city-form button { padding:8px 12px; }
+.weather-card { text-align:center; }
+.weather-card img { width:96px; height:96px; }
+.temp { font-size:2rem; margin:6px 0; }
+.desc { text-transform:capitalize; color:#555; }
+.error { color:#c00; }
+.flashes { list-style:none; padding:0; margin:0 0 12px 0; color:#c00; }
